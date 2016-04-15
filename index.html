@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/jesus.jpg','imagenes/colima.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" 	   data-back-btn-theme="b">
+<h1><center>¡VOLCANES!</center></h1>
+</div>
+<div data-role="main" class="ui-content">
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:960px;height:180px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Popocatepetl</h2>
+<p>Informacion ¡Qué debes conocer!</p>
+</a>
+</li>
+
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Volcán de Colima</h2>
+<p>Informacion ¡Qué debes conocer!</p>
+</a>
+</li> 
+
+</ul>
+</div>
+<div>
+<center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/colima.jpg',1)"><img src="imagenes/puebla.JPG" width="360" height="300" id="Image13"></a></center>
+
+</div>
+
+
+
+<div data-role="footer" align="center" data-theme="a">
+  <div>
+  <h4>Aplicacion Tres</h4>
+  <h4>Volcanes</h4>
+  <h4>Jose Angel Cordero Ocelo</h4>
+  </div>
+  </div>
+  </div>
+  
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1><font color = "red">Volcan Popocatepetl</font></h1>
+ 
+  </div>
+  <div data-role="content" align="center">
+  <div>
+  <h1>Ubicacion.</h1>
+  <p>El Popocatépetl (en náhuatl: popocatepetl, ‘el cerro que humea’‘popoca, humear; tepetl, cerro’) es un volcán activo localizado en el centro de México, en los límites territoriales de los estados de Morelos, Puebla y México. Se localiza a unos 72 km al sureste de la Ciudad de México, 43 km de Puebla, 63 km de Cuernavaca, y 53 km de Tlaxcala.</p>
+   <br>
+   <div>
+<img src="imagenes/ubicacion1.jpg" width="50%" height="40%"> </div>
+  <br>
+  
+  <br>
+  <h1>Dimensiones</h1>
+  <p>De apariencia casi simétrica, cubre una superficie de 283,192.53 hectáreas y tiene una altura de 5,426 metros sobre el nivel del mar. Posee un cráter elíptico de paredes empinadas con una profundidad de 150 metros desde el labio inferior, un diámetro mayor de 900 metros y un ancho total de 400 x 600 metros.
+El paisaje en la zona que rodea al Popocatépetl contiene varios tipos de ecosistemas con rica variedad de flora y fauna. Hay bosques mixtos de pino, oyamel y encino, donde coexisten hasta 1,000 especies de plantas. Sobre el cono, principalmente cerca de la boca, se encuentran glaciares que durante los últimos años han disminuido.</p>
+  <br>
+   <div>
+<img src="imagenes/mide1.jpg" width="50%" height="40%"> </div>
+<br>
+
+<br>
+<h1>Monitoreos</h1>
+<p> Monitoreo Volcanico Popocatepetl: El conjunto de los institutos de Geofisica e Ingeniería  de la UNAM en conjunto con del U.S. Geolical Survey.</p>
+  <br>
+  <div>
+<a href = "http://www.cenapred.unam.mx/es/"><img src="imagenes/monitoreo1.jpg" width="50%" height="20%"></a></div>
+  <br>
+  
+  <br>
+  <h1>Medidas Preventivas</h1>
+  <p>
+ERUPCIÓN:
+Mantente alejado de volcanes activos.
+Si vives cerca de un volcán activo, prepara un kit de emergencia que incluya gafas de seguridad, una máscara, una linterna y una radio en buen estado que funcione con pilas.
+Elabora una ruta de evacuación y ten el depósito de gasolina del coche siempre lleno.
+Evacua siguiendo las recomendaciones de las autoridades para no encontrarte lava y barro, así como rocas y escombros que puede arrojar el volcán.
+Evita zonas de ríos y regiones bajas.
+Antes de abandonar tu casa, ponte una camisa de manga larga y pantalones largos; usa gafas de seguridad o normales, sin lentillas. Ponte una máscara de emergencia o envuélvete la cara con un paño húmedo.
+Si no vas a evacuar, cierra puertas y ventanas, y bloquea la chimenea y otros puntos de ventilación para evitar que la ceniza entre en la casa.
+Ten en cuenta que la ceniza puede sobrecargar el tejado y puedes necesitar retirarla. Durante la limpieza, lleva elementos de protección
+La ceniza puede dañar motores y piezas metálicas, así que evita conducir. Si debes conducir, no superes los 55 kilómetro</p>
+<br>
+<p>
+CAIDA DE CENIZA:
+No humedecer la ceniza a fin de evitar taponamientos en el sistema de alcantarillado
+Mantén la calma.
+Utiliza medios electrónicos y de comunicación para obtener información confiable que den las autoridades de Protección Civil sobre la caída de ceniza y atiende siempre sus instrucciones.
+No realices actividades al aire libre y si es posible no salgas.
+Cierra puertas y ventanas y coloca toallas o trapos húmedos en las rendijas.
+Si tienes que salir cúbrete con un pañuelo o tapabocas, limpia ojos y garganta con agua pura.
+Para los ojos, usa lentes protectores, especialmente si usas lentes de contacto.
+Ten a la mano una linterna y pilas.
+La ceniza volcánica puede ser resbaladiza, sobre todo cuando está mojada. Toma las precauciones necesarias.
+Cubre tinacos, cisternas y depósitos de agua.
+Barre y retira la ceniza de techos, azoteas, patios y calles, deposítalas en bolsas y no permitas que se vaya al drenaje.</p>
+   <div>
+<img src="imagenes/prevencion1.jpg" width="72%" height="50%"> </div>
+  <br>
+  <br>
+    <div data-role="collapsible" data-content-theme="false">
+  <h1>Imagen Extra </h1>
+<div>
+
+<br>
+</div>
+<div>
+<img src="imagenes/Gracias1.jpg" width="406" height="52%"> </div>
+
+  
+  
+  </div>
+  
+ 
+ 
+
+ 
+  </div>
+  </div>
+   <div data-role="footer" align="center" data-theme="a">
+  <div>
+  <h4>Aplicacion Tres</h4>
+  <h4>Volcanes</h4>
+  <h4>Jose Angel Cordero Ocelo</h4>
+  </div>
+  </div>
+</div>
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1><font color = "red">Volcan de Colima</font></h1>
+ 
+  </div>
+  <div data-role="content" align="center">
+  <div>
+  <h1>Ubicacion.</h1>
+  <p>El volcán de colima es un estratovolcán ubicado en los límites de los estados de Colima y Jalisco, en México. El volcán de Colima o volcán de Fuego se eleva entre 3870 y 3940 msnm, y su altura se encuentra en un constante cambio gracias a la constante actividad que ha presentado durante los últimos años; por eso resulta difícil decir con exactitud cuál es en estos momentos.</p>
+   <br>
+   <div>
+<img src="imagenes/ubicacion2.png" width="50%" height="40%"> </div>
+  <br>
+  
+  <br>
+  <h1>Dimensiones</h1>
+  <p>El volcán de Colima o volcán de Fuego se eleva entre 3870 y 3940 msnm, y su altura se encuentra en un constante cambio gracias a la constante actividad que ha presentado durante los últimos años; por eso resulta difícil decir con exactitud cuál es en estos momentosElevación: 3.839 m</p>
+  <br>
+   <div>
+<img src="imagenes/mide2.jpg" width="50%" height="40%"> </div>
+<br>
+
+<br>
+<h1>Monitoreos</h1>
+<p> Monitoreo Volcanico Popocatepetl: El conjunto de los institutos de Geofisica e Ingeniería  de la UNAM en conjunto con del U.S. Geolical Survey.</p>
+  <br>
+  <div>
+<a href=<a href = "http://www.cenapred.unam.mx/es/">"><img src="imagenes/monitoreo1.jpg" width="50%" height="20%"></a> </div>
+  <br>
+  
+  <br>
+  <h1>Medidas Preventivas</h1>
+  <p>ERUPCIÓN:
+Mantente alejado de volcanes activos.
+Si vives cerca de un volcán activo, prepara un kit de emergencia que incluya gafas de seguridad, una máscara, una linterna y una radio en buen estado que funcione con pilas.
+Elabora una ruta de evacuación y ten el depósito de gasolina del coche siempre lleno.
+Evacua siguiendo las recomendaciones de las autoridades para no encontrarte lava y barro, así como rocas y escombros que puede arrojar el volcán.
+Evita zonas de ríos y regiones bajas.
+Antes de abandonar tu casa, ponte una camisa de manga larga y pantalones largos; usa gafas de seguridad o normales, sin lentillas. Ponte una máscara de emergencia o envuélvete la cara con un paño húmedo.
+Si no vas a evacuar, cierra puertas y ventanas, y bloquea la chimenea y otros puntos de ventilación para evitar que la ceniza entre en la casa.
+Ten en cuenta que la ceniza puede sobrecargar el tejado y puedes necesitar retirarla. Durante la limpieza, lleva elementos de protección
+La ceniza puede dañar motores y piezas metálicas, así que evita conducir. Si debes conducir, no superes los 55 kilómetro</p>
+<br>
+<p>
+CAIDA DE CENIZA:
+No humedecer la ceniza a fin de evitar taponamientos en el sistema de alcantarillado
+Mantén la calma.
+Utiliza medios electrónicos y de comunicación para obtener información confiable que den las autoridades de Protección Civil sobre la caída de ceniza y atiende siempre sus instrucciones.
+No realices actividades al aire libre y si es posible no salgas.
+Cierra puertas y ventanas y coloca toallas o trapos húmedos en las rendijas.
+Si tienes que salir cúbrete con un pañuelo o tapabocas, limpia ojos y garganta con agua pura.
+Para los ojos, usa lentes protectores, especialmente si usas lentes de contacto.
+Ten a la mano una linterna y pilas.
+La ceniza volcánica puede ser resbaladiza, sobre todo cuando está mojada. Toma las precauciones necesarias.
+Cubre tinacos, cisternas y depósitos de agua.
+Barre y retira la ceniza de techos, azoteas, patios y calles, deposítalas en bolsas y no permitas que se vaya al drenaje.</p>
+<br>
+   <div>
+<img src="imagenes/prevencion2.jpg" width="53%" height="22%"> </div>
+  <br>
+  <br>
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>Foto Extra </h1>
+<div>
+
+
+</div>
+
+<div>
+<img src="imagenes/Gracias2.jpg" width="74%" height="27%"> </div>
+
+
+  </div>
+  
+   
+
+ 
+
+  </div>
+  </div>
+   <div data-role="footer" data-theme="a">
+  <h4>Aplicacion Tres</h4>
+  <h4>Volcanes</h4>
+  <h4>José Ángel Cordero Ocelo</h4>
+  </div>
+ </div>
+
+
+ 
+
+</body>
+ </html>
